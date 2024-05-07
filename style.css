@@ -73,7 +73,7 @@ hr.dotted{
 }
 .drop-container a{
     display: block !important;
-    width: 100% !important;
+    max-width: 97% !important;
 }
 .drop-content{
     display: none;
