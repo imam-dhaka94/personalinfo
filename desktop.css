@@ -1,0 +1,141 @@
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/* navbar design starts from here  */
+.navbar{
+    min-height: 183px;
+    max-height: max-content;
+}
+.nav-logo{
+    text-align: left;
+}
+
+.nav-heading{
+    text-align: right;
+    margin-top: 2px;
+    position: relative;
+    right: 80px;
+}
+.nav-manu{
+    text-align: right;
+    margin-top: 18px;
+    
+}
+.nav-manu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.nav-manu a{
+    width: max-content;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: transparent;
+}
+.drop-container{
+    display: inline;
+    position: relative;
+    right: 20px;
+    
+}
+
+.drop-container:hover .drop-content{
+    display: block;
+}
+.drop-content{
+    position: absolute;
+    top: 44px;
+    left: 30px;
+    text-align: left;
+    display: none;
+    background-color: #002d60;
+    
+}
+
+.drop-content a{
+    margin: none;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+.drop-content a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+/* navbar design end here  */
+
+
+
+/* profile design starts from here  */
+    .profile{
+        margin: 50px auto;
+    }
+    .profile .weather-icon-top{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 20px;
+        right: 100px;
+        transition: transform 2s, width 2s, height 2s;
+    
+    }
+    .profile .weather-icon-top:hover{
+        transform: rotate(360deg);
+        width: 120px;
+        height: 120px;
+    }
+
+    .discription h1{
+        font-family: "Dancing Script", cursive;
+        padding: 20px;
+        font-size: 3rem;
+        
+      
+      
+    
+    }
+
+    .profile .weather-icon-bottom{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        bottom: 10px;
+        left: 100px;
+        transition: transform 2s, width 2s, height 2s;
+    
+    }
+    .profile .weather-icon-bottom:hover{
+        transform: rotate(360deg);
+        width: 120px;
+        height: 120px;
+    }
+
+
+/* profile design end here  */
+
+
+/* about me section design here  */
+
+    .image-section img{
+        width: 270px;
+        margin-top: 40px;
+    }
+    .discription2{
+        text-align: left;
+    }
+    .cv-button button{
+        position: relative;
+        right: 20px;
+    }
+/* about me section ends here  */
+

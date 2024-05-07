@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .skill-container{
+            background-color: gray;
+            max-width: 50%;
+            padding: 30px;
+            margin: 20px auto;
+            color: white;
+            border-radius: 10px;
+                      /* hr,   vr,  full,  effect   color */
+            box-shadow:  5px   5px   5px    1px    black;
+            transition: box-shadow 0.3s;
+        }
+        .skill-container:hover{
+                      /* hr,   vr,  full,  effect   color */
+            box-shadow:  5px   5px   10px    3px    black;
+        }
+        .skill-container li{
+            margin: 30px 10px;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            font-weight: bolder;
+            position: relative;
+            bottom: 15px;
+
+        }
+        .skill-container li::before{
+            position: absolute;
+            top: calc(100% + 3px);
+            left: 0%;
+            width: 100%;
+            height: 20px;
+            background-color: cadetblue;
+            border-radius: 10px;
+            content: '';
+
+        }
+
+        .skill-container li::after{
+            position: absolute;
+            top: calc(100% + 3px);
+            left: 0%;
+            width: 0%;
+            height: 20px;
+            background-color: rgb(218, 240, 240);
+            border-radius: 10px;
+            content: '';
+            animation: 2s ease-in-out 0.7s 1 forwards;
+
+        }
+
+        .skill-container:hover li.html::after{
+            animation-name: html;
+        }
+
+        @keyframes html {
+            to{
+                width: 95%;
+                background-color: rgb(94, 255, 0);
+            }
+        }
+        .skill-container:hover li.css::after{
+            animation-name: css;
+        }
+        @keyframes css {
+            from{
+                width: 0%;
+                background-color: yellow;
+            
+            }
+            to{
+                width: 90%;
+                background-color: rgb(42, 188, 42);
+            }
+            
+        }
+        .skill-container:hover li.js:after{
+            animation-name: js;
+        }
+
+        @keyframes js {
+            to{
+                width: 80%;
+                background-color: yellow;
+            }
+        }
+
+        .skill-container:hover li.c:after{
+            animation-name: c;
+        }
+
+        @keyframes c {
+            to{
+                width: 60%;
+                background-color: rgb(255, 89, 0);
+            }
+        }
+        @media screen and (min-width:992px) {
+            .skill-container{
+                height: 500px;
+                
+            }
+            .skill-container li{
+                margin: 70px;
+                position: relative;
+                bottom: 20px;
+            }
+        }
+
+        
+    
+    </style>
+</head>
+<body>
+    <div class="skill-container">
+        <ul>
+            <li class="html">html</li>
+            <li class="css">css</li>
+            <li class="js">js</li>
+            <li class="c">c++</li>
+        </ul>
+    </div>
+</body>
+</html>
