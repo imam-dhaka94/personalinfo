@@ -202,3 +202,237 @@ hr.dotted{
 }
 
 /* about me design ends here  */
+
+/* card-section design starts here  */
+.card{
+    padding: 30px;
+    background-color: #a19797;
+    height: 730px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: box-shadow 0.2s;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.765);
+}
+
+.card:hover{
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.883);
+}
+
+.icon{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.icon img{
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    
+}
+.image-icon{
+    height: 90px;
+    width: 90px;
+}
+
+.card-heading {
+    background-color: rgb(84, 77, 77);
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.card-desc{
+    padding: 10px;
+}
+.card-desc ol li p{
+    margin: 5px !important;
+}
+hr.common{
+    margin: 10px 0px;
+}
+.card-section::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* card-section design ends here  */
+
+
+/* skill container section design start here  */
+
+    .skill-content{
+        
+        
+    }
+    .skill-content li{
+        position: relative;
+        list-style: none;
+        margin: 70px 20px;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: bolder;
+        color: rgb(40, 29, 82);
+    }
+    .skill-content li::before{
+        content: '';
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        width: 100%;
+        background-color: #346297ce;
+        height: 25px;
+        border-radius: 1000px;
+    }
+    .skill-content li::after{
+        content: '';
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        width: 0%;
+        background-color: #0e4687;
+        height: 25px;
+        border-radius: 1000px;
+        animation: 2s linear 0.3s 2 forwards;
+    }
+    .skill-content:hover li.html::after{
+        animation-name: html;
+    }
+    @keyframes html {
+        to{
+            width: 95%;
+        }
+        
+    }
+    .skill-content:hover li.css::after{
+        animation-name: css;
+    }
+    @keyframes css {
+        to{
+            width: 90%;
+        }
+        
+    }
+    .skill-content:hover li.js::after{
+        animation-name: js;
+    }
+    @keyframes js {
+        to{
+            width: 70%;
+        }
+    }
+    .skill-content:hover li.c::after{
+        animation-name: c;
+    }
+    @keyframes c {
+        to{
+            width: 60%;
+        }
+    }
+
+/* skill container section design ends here  */
+
+/* contact section starts here  */
+    .contact-section{
+        background-color: rgb(69, 177, 177);
+        text-align: center;
+        padding: 2% 5%;
+
+    }
+    .contact-section h2{
+        color: white;
+        font-size: 1.5rem;
+    }
+    hr.dotted{
+        color: white;
+        border-width: 5px;
+    }
+    .achivement{
+        margin-bottom: 10px;
+    }
+    .achivement p{
+        text-align: left;
+        margin: 10px 0;
+        font-size: 1.1rem;
+    }
+    .contact2 input, textarea{
+        display: block;
+        text-align: center;
+        margin: 3px auto;
+        padding: 6px;
+        width: 100%;
+        resize: none;
+        border-radius: 5px;
+        border: none;
+        
+    }
+    .contact2 button{
+        border: none;
+        width: 90px;
+        background-color: #002d60;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        font-size: 15px;
+        font-weight: bolder;
+        border-radius: 5px;
+    }
+    .contact2 button:active{
+        color: black;
+        background-color: white;
+    }
+    form{
+        margin-top: 15px;
+    }
+
+
+
+/* contact section ends here  */
+
+/* moreway contact section starts here  */
+
+.btn-contact button{
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 70px;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px 1px black;
+    transition: background-color 0.3s;
+
+}
+.btn-contact button:hover{
+    background-color: gray;
+}
+.btn-contact button:active{
+    background-color: white;
+}
+
+/* moreway contact section starts here  */
+
+/* footer section starts here  */
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.footer .footer-nav a{
+    display: block;
+    font-size: 1rem;
+
+}
+
+.footer .footer-nav a:hover{
+    color: gray;
+}
+
+.footer-desc span {
+    font-size: 1.5rem;
+}
+
+.footer::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* footer section ends here  */

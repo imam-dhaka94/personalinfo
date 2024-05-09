@@ -123,6 +123,13 @@
 
 /* profile design end here  */
 
+/* card-section design here  */
+
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 
 /* about me section design here  */
 
@@ -139,3 +146,36 @@
     }
 /* about me section ends here  */
 
+/* contact section starts here  */
+.contact-section{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.achivement{
+    margin-right: 20px;
+}
+
+/* contact section ends here  */
+
+
+/* moreway contact section starts here  */
+
+
+
+/* moreway contact section starts here  */
+
+
+/* footer section starts here  */
+.footer{
+    padding: 20px;
+}
+
+.footer-nav{
+    margin-top: 10px;
+}
+.footer .footer-nav a{
+    display: inline;
+    margin-top: 20px;
+}
+
+/* footer section ends here  */
